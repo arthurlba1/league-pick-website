@@ -12,7 +12,7 @@ import SearchPlayerComponent from './SearchPlayerComponent';
 export default function NavbarComponent() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar elevation={0} position="static" sx={{width: "100%", background: '#1D1B23'}}>
+      <AppBar elevation={0} position='static' sx={{width: '100%', background: '#1D1B23'}}>
         <Toolbar sx={{padding: 0 }}>
           <LeaguePickLogoComponent />
           <Typography
