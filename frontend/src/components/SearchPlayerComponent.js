@@ -47,7 +47,7 @@ const Search = styled('div')(({ theme }) => ({
   }));
 
   export default function SearchPlayerComponent() {
-    const [summoner, setSummoner] = useState("")
+    const [summoner, setSummoner] = useState('')
     const navigate = useNavigate();
 
     async function handleSummonerProfile(value) {
