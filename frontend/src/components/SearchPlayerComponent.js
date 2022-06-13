@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
@@ -45,6 +47,14 @@ const Search = styled('div')(({ theme }) => ({
   }));
 
   export default function SearchPlayerComponent() {
+    const [summoner, setSummoner] = useState('')
+    const navigate = useNavigate();
+
+    async function handleSummonerProfile(value) {
+      if (value === 'Enter')
+        navigate(`/summoner/${summoner}`)
+    }
+
       return (
         <Search>
             <SearchIconWrapper>
@@ -53,6 +63,8 @@ const Search = styled('div')(({ theme }) => ({
             <StyledInputBase
               placeholder='Search…'
               inputProps={{ 'aria-label': 'search' }}
+              onChange={(e) => setSummoner(e.target.value)}
+              onKeyDown={(e) => handleSummonerProfile(e.key) }
             />
           </Search>
       );
