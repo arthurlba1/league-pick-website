@@ -1,21 +1,25 @@
-import * as React from 'react';
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
-const handlePicksRouter = (event) => {
-
-}
-
-const handleChampionsRouter = (event) => {
-
-}
-
-const handleAboutRouter = (event) => {
-
-}
-
 export default function RoutesComponent(){
+
+  const navigate = useNavigate();
+
+  async function handlePicksRouter() {
+    navigate(`/`)
+  }
+  
+  async function handleChampionsRouter() {
+    navigate(`/champions`)
+  }
+  
+  async function handleAboutRouter() {
+    navigate(`/about`)
+  }
+
     return (
         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, marginLeft: '1em%'}}>
             <Button
