@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;  
+    background-color: #1D1B23;
+}
+
+body, input, button{
+    color: #FFFFFF;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
