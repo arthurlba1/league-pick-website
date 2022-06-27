@@ -45,10 +45,10 @@ export default function SummonerCardComponent(props){
             <CardContent sx={{ height: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Grid container columns={16}>
                 <Grid item xs={8}>
-                    <Typography sx={{ fontSize: '2vw', fontFamily: 'Lexend Deca', fontWeight: 800, color: '#EDC988' }}>
+                    <Typography sx={{ fontSize: '1.7vw', fontFamily: 'Lexend Deca', fontWeight: 800, color: '#EDC988' }}>
                         WINS: {props.summoner.wins}
                     </Typography>
-                    <Typography sx={{ fontSize: '2vw', fontFamily: 'Lexend Deca', fontWeight: 800, color: '#D7385E' }}>
+                    <Typography sx={{ fontSize: '1.7vw', fontFamily: 'Lexend Deca', fontWeight: 800, color: '#D7385E' }}>
                         LOSSES: {props.summoner.losses}
                     </Typography>
                 </Grid>
