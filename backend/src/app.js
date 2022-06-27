@@ -5,7 +5,7 @@ const axios = require('axios');
 const cors = require('cors');
 const app = express();
 
-require('dotenv').config({ path: path.resolve(__dirname, '../../.env') })
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
 
 app.use(json());
 app.use(cors());
